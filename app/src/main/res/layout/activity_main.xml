@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shrish.currencyconverter.MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="Enter the amount"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginStart="12dp"
+        android:alpha="30"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="cursive"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:text="Dollars     :" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="35dp"
+        android:alpha="66"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="cursive"
+        android:text="Rupees      :"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/editText2"
+        android:fontFamily="cursive"
+        android:text="converted currency is ..."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="71dp"
+        android:onClick="clickFunction"
+        android:text="Convert" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp" />
+
+
+</RelativeLayout>
+
